@@ -14,8 +14,8 @@ public:
 		Craft = string ("Kunai");
 		Salary = 10000;
 	}
-	Worker(string Name, int Age, string Gender, string Craft, int Salary)
-		:Person(Name, Age, Gender) {
+	Worker(string Craft, int Salary, string Name, int Age, string Gender, string Element_Chakra, string Name_Clan, double Population_Clan)
+		:Person(Name, Age, Gender, Element_Chakra, Name_Clan, Population_Clan){
 		this->Craft = Craft;
 		this->Salary = Salary;
 	}
