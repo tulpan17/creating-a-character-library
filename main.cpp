@@ -7,25 +7,28 @@
 #include "worker.h"
 #include "ninja.h"
 
+using namespace std;
+
 
 int main() {
-	//Пример выводов классов со стандартными значениями
+	//An example of class outputs with standard values. The output with operator overload is used everywhere <<
 	/*
 	Country country;
-	cout << country.getName_Country() << endl;
+	cout << country << endl;
 	Village village;
-	cout << village.getName_Village() << " " << village.getPopulation_Village() << " " << village.getName_Country() << endl;
+	cout << village << endl;
 	Clan clan;
-	cout << clan.getName_Clan() << " " << clan.getPopulation_Clan() << " " << clan.getName_Village() << " " << clan.getName_Country() << endl;
+	cout << clan << endl;
 	Chakra chakra;
-	cout << chakra.getElement_Chakra() << endl;
+	cout << chakra << endl;
 	Person person;
-	cout << person.getName() << " " << person.getAge() << " " << person.getGender() << " " << person.getElement_Chakra() << " " << person.getName_Clan() << " " << person.getName_Village() << " " << person.getName_Country() << endl;
+	cout << person << endl;
 	Worker worker;
-	cout << worker.getName() << " " << worker.getAge() << " " << worker.getGender() << " " << worker.getCraft() << " " << worker.getSalary() << " " << worker.getName_Village() << " " << worker.getName_Country() << endl; 
+	cout << worker << endl; 
 	Ninja ninja;
-	cout << ninja.getName() << " " << ninja.getAge() << " " << ninja.getGender() << " " << ninja.getRank() << " " << ninja.getWeapon() << " " << ninja.getFstyle() << " " << ninja.getName_Village() << " " << ninja.getName_Country() << endl;
+	cout << ninja << endl;
 	*/
+
 	Country Your_country;
 	Village Your_village;
 	Clan Your_clan;
@@ -47,8 +50,9 @@ int main() {
 		cin >> choice;
 		if (choice == "1")
 		{
-			Country Your_country("Fire Country");
-			Village Your_village("Village of the Hidden Leaf", 100000, "Fire Country");
+			Your_country.setName_Country("Fire Country");
+			Your_village.setName_Village("Village of the Hidden Leaf");
+			Your_village.setPopulation_Village(100000);
 			cout << "Great, your country is now: " << Your_country.getName_Country() << " and your village is now: " << Your_village.getName_Village() << " where " << Your_village.getPopulation_Village() << " people live." << endl;
 			cout << "Now you have to choose a clan:" << endl;
 			cout << "1. Aburame Clan" << endl << "2. Hyuga Clan" << endl << "3. Nara Clan" << endl << "4. Senju Clan" << endl << "5. Uchiha Clan" << endl << "6. Yamanaka Clan" << endl;
@@ -151,29 +155,31 @@ int main() {
 		cin >> choice;
 		if (choice == "1")
 		{
-			Chakra Your_chakra("Water");
-			cout << "Your chakra element is " << Your_chakra.getElement_Chakra() << endl;
+			Your_chakra.setElement_Chakra("Water");
+			cout << "Your chakra element is " << Your_chakra << endl;
 		}
 		else if (choice == "2")
 		{
-			Chakra Your_chakra("Fire");
+			Your_chakra.setElement_Chakra("Fire");
 			cout << "Your chakra element is " << Your_chakra.getElement_Chakra() << endl;
 		}
 		else if (choice == "3")
 		{
-			Chakra Your_chakra("Lightning");
+			Your_chakra.setElement_Chakra("Lightning");
 			cout << "Your chakra element is " << Your_chakra.getElement_Chakra() << endl;
 		}
 		else if (choice == "4")
 		{
-			Chakra Your_chakra("Wind");
+			Your_chakra.setElement_Chakra("Wind");
 			cout << "Your chakra element is " << Your_chakra.getElement_Chakra() << endl;
 		}
 		else if (choice == "5")
 		{
-			Chakra Your_chakra("Earth");
+			Your_chakra.setElement_Chakra("Earth");
 			cout << "Your chakra element is " << Your_chakra.getElement_Chakra() << endl;
 		}
+		cout << Your_chakra << endl;
 	}
+
 	return 0;
 }
