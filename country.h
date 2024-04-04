@@ -22,6 +22,11 @@ public:
 	void setName_Country(string Name_Country) {
 		this->Name_Country = Name_Country;
 	}
+
+	friend ostream& operator<<(ostream& out, const Country& country) {
+		out << "Country Name: " << country.Name_Country << endl;
+		return out;
+	}
 };
 
 

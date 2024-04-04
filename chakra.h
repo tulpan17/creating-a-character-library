@@ -22,7 +22,12 @@ public:
 	void setElement_Chakra(string Element_Chakra) {
 		this->Element_Chakra = Element_Chakra;
 	}
+
+	friend ostream& operator<<(ostream& out, const Chakra& chakra) {
+		out << "Element Chakra: " << chakra.Element_Chakra << endl;
+		return out;
+	}
 };
 
-#endif // !chakra_h
+#endif 
 

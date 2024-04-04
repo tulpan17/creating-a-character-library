@@ -6,12 +6,12 @@
 using namespace std;
 
 class Worker :public Person {
-protected:
+private:
 	string Craft;
 	int Salary;
 public:
 	Worker() {
-		Craft = string ("Kunai");
+		Craft = string ("Builder");
 		Salary = 10000;
 	}
 	Worker(string Craft, int Salary, string Name, int Age, string Gender, string Element_Chakra, string Name_Clan, string Name_Village)
@@ -32,6 +32,13 @@ public:
 	}
 	void setSalary(int Salary) {
 		this->Salary = Salary;
+	}
+
+	friend ostream& operator<<(ostream& out, const Worker& worker) {
+		out << static_cast<Person>(worker);
+		out << "Craft: " << worker.Craft << endl;
+		out << "Salary: $" << worker.Salary << endl;
+		return out;
 	}
 };
 #endif

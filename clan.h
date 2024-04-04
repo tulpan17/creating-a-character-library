@@ -31,6 +31,13 @@ public:
 	void setPopulation_Clan(double Population_Clan) {
 		this->Population_Clan = Population_Clan;
 	}
+
+	friend ostream& operator<<(ostream& out, const Clan& clan) {
+		out << "Clan Name: " << clan.Name_Clan << endl;
+		out << "Clan Population: " << clan.Population_Clan << endl;
+		out << static_cast<Village>(clan);
+		return out;
+	}
 };
 
 #endif

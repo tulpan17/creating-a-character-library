@@ -42,6 +42,15 @@ public:
 	void setGender(string Gender) {
 		this->Gender = Gender;
 	}
+
+	friend ostream& operator<<(ostream& out, const Person& person) {
+		out << "Name: " << person.Name << endl;
+		out << "Age: " << person.Age << endl;
+		out << "Gender: " << person.Gender << endl;
+		out << static_cast<Chakra>(person);
+		out << static_cast<Clan>(person);
+		return out;
+	}
 };
 
-#endif // !person_h
+#endif 

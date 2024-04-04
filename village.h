@@ -34,6 +34,13 @@ public:
 	void setPopulation_Village(double Population_Village) {
 		this->Population_Village = Population_Village;
 	}
+
+	friend ostream& operator<<(ostream& out, const Village& village) {
+		out << "Village Name: " << village.Name_Village << endl;
+		out << "Population: " << village.Population_Village << endl;
+		out << "Country: " << village.Name_Country << endl;
+		return out;
+	}
 };
 
 #endif

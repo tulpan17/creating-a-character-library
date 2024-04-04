@@ -40,5 +40,13 @@ public:
 	void setFstyle(string Fighting_style) {
 		this->Fighting_style = Fighting_style;
 	}
+
+	friend ostream& operator<<(ostream& out, const Ninja& ninja) {
+		out << static_cast<Person>(ninja);
+		out << "Rank: " << ninja.Rank << endl;
+		out << "Weapon: " << ninja.Weapon << endl;
+		out << "Fighting Style: " << ninja.Fighting_style << endl;
+		return out;
+	}
 };
 #endif 
