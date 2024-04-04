@@ -5,7 +5,7 @@
 using namespace std;
 
 class Chakra {
-private:
+protected:
 	string Element_Chakra;
 public:
 	Chakra() {

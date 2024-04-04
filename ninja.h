@@ -14,8 +14,8 @@ public:
 		Weapon = string("Kunai");
 		Fighting_style = string("Ninjutsu");
 	}
-	Ninja(string Rank, string Weapon, string Fighting_style, string Name, int Age, string Gender, string Element_Chakra, string Name_Clan, double Population_Clan)
-		:Person(Name, Age, Gender, Element_Chakra, Name_Clan, Population_Clan) {
+	Ninja(string Rank, string Weapon, string Fighting_style, string Name, int Age, string Gender, string Element_Chakra, string Name_Clan, string Name_Village)
+		:Person(Name, Age, Gender, Element_Chakra, Name_Clan, Population_Clan, Name_Village, Population_Village, Name_Country) {
 		this->Rank = Rank;
 		this->Weapon = Weapon;
 		this->Fighting_style = Fighting_style;

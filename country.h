@@ -8,12 +8,12 @@ class Country {
 protected:
 	string Name_Country;
 public:
-	Country(string Name_Country) {
-		this->Name_Country = Name_Country;
-	}
 	Country() {
 		Name_Country = string("Country of Fire");
 	}
+	Country(string Name_Country) {
+			this->Name_Country = Name_Country;
+		}
 
 	string getName_Country() {
 		return Name_Country;

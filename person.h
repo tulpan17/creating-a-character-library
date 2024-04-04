@@ -7,7 +7,7 @@
 using namespace std;
 
 class Person :public Chakra, public Clan{
-private:
+protected:
 	string Name;
 	int Age;
 	string Gender;
@@ -17,7 +17,7 @@ public:
 		Age = 16;
 		Gender = string("Male");
 	}
-	Person(string Name, int Age, string Gender, string Element_Chakra, string Name_Clan, double Population_Clan) :Chakra(Element_Chakra), Clan(Name_Clan, Population_Clan, Name_Village){
+	Person(string Name, int Age, string Gender, string Element_Chakra, string Name_Clan, double Population_Clan, string Name_Village, double Population_Village, string Name_Country) :Chakra(Element_Chakra), Clan(Name_Clan, Population_Clan, Name_Village, Population_Village, Name_Country){
 		this->Name = Name;
 		this->Age = Age;
 		this->Gender = Gender;

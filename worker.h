@@ -6,7 +6,7 @@
 using namespace std;
 
 class Worker :public Person {
-private:
+protected:
 	string Craft;
 	int Salary;
 public:
@@ -14,8 +14,8 @@ public:
 		Craft = string ("Kunai");
 		Salary = 10000;
 	}
-	Worker(string Craft, int Salary, string Name, int Age, string Gender, string Element_Chakra, string Name_Clan, double Population_Clan)
-		:Person(Name, Age, Gender, Element_Chakra, Name_Clan, Population_Clan){
+	Worker(string Craft, int Salary, string Name, int Age, string Gender, string Element_Chakra, string Name_Clan, string Name_Village)
+		:Person(Name, Age, Gender, Element_Chakra, Name_Clan, Population_Clan, Name_Village, Population_Village, Name_Country) {
 		this->Craft = Craft;
 		this->Salary = Salary;
 	}

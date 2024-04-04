@@ -9,6 +9,7 @@ class Village :public Country{
 protected:
 	string Name_Village;
 	double Population_Village;
+
 public:
 	Village(string Name_Village, double Population_Village, string Name_Country)
 		:Country(Name_Country) {
