@@ -11,7 +11,7 @@ using namespace std;
 
 int main() {
 	//An example of class outputs with standard values. The output with operator overload is used everywhere <<.
-	
+	/*
 	Country country;
 	cout << country << endl;
 	Village village;
@@ -26,8 +26,7 @@ int main() {
 	cout << worker << endl;
 	Ninja ninja;
 	cout << ninja << endl;
-	
-
+	*/
 
 	Country Your_country;
 	Village Your_village;
