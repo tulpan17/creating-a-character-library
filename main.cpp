@@ -284,7 +284,7 @@ int main() {
 		}
 		if (choice == "2")
 		{
-			cout << "Goood! The life of an ordinary worker is unpredictable, but everything is in your hands." << endl;
+			cout << "Good! The life of an ordinary worker is unpredictable, but everything is in your hands." << endl;
 			cout << "Choose one of the proposed professions (this will determine your starting salary):" << endl;
 			cout << "1. Builder" << endl << "2. Trader" << endl << "3. Fisherman" << endl << "4. Blacksmith" << endl << "5. Miner" << endl << "6. Tailor" << endl << "7. Cook" << endl << "8. Shoemaker" << endl << "9. Jeweler" << endl;
 			cin >> choice;
