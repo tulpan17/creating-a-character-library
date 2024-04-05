@@ -10,8 +10,8 @@
 using namespace std;
 
 int main() {
-	//An example of class outputs with standard values. The output with operator overload is used everywhere <<
-	/*
+	//An example of class outputs with standard values. The output with operator overload is used everywhere <<.
+	
 	Country country;
 	cout << country << endl;
 	Village village;
@@ -26,7 +26,9 @@ int main() {
 	cout << worker << endl;
 	Ninja ninja;
 	cout << ninja << endl;
-	*/
+	
+
+
 	Country Your_country;
 	Village Your_village;
 	Clan Your_clan;
@@ -205,11 +207,11 @@ int main() {
 			Your_person.setGender("Woman");
 			cout << "Gender: " << Your_person.getGender() << endl;
 		}
-		cout << "Ok. Give him a name." << endl;
+		cout << "Ok. Give your character a name." << endl;
 		cin >> choice;
 		Your_person.setName(choice);
 		cout << "Name: " << Your_person.getName() << endl;
-		cout << "Interesting. How old is he?" << endl;
+		cout << "Interesting. How old is the character?" << endl;
 		unsigned age;
 		cin >> age;
 		Your_person.setAge(age);
@@ -219,7 +221,7 @@ int main() {
 		cin >> choice;
 		if (choice == "1")
 		{
-			cout << "Good! His life will be full of adventures and battles." << endl;
+			cout << "Good! Your character's life will be full of adventures and battles." << endl;
 			cout << "What rank will he have when he appears?" << endl;
 			cout << "1. Academy student" << endl << "2. Genin" << endl << "3. Chunin" << endl << "4. Goinin" << endl << "5. Kage" << endl;
 			cin >> choice;
@@ -270,7 +272,7 @@ int main() {
 				Your_ninja.setFstyle("Taijutsu");
 				cout << "Basic fighting style of " << Your_ninja.getFstyle() << endl;
 			}
-			cout << "Great, your character is ready! Here is its full characteristic:" << endl;
+			cout << "\nGreat, your character is ready! Here is its full characteristic:" << endl;
 			cout << "Name: " << Your_person.getName() << endl;
 			cout << "Age: " << Your_person.getAge() << endl;
 			cout << "Gender: " << Your_person.getGender() << endl; 
@@ -342,7 +344,7 @@ int main() {
 				Your_worker.setSalary(10000);
 				cout << "He is a " << Your_worker.getCraft() << " and currently earns $" << Your_worker.getSalary() << endl;
 			}
-			cout << "Great, your character is ready! Here is its full characteristic:" << endl; 
+			cout << "\nGreat, your character is ready! Here is its full characteristic:" << endl; 
 			cout << "Name: " << Your_person.getName() << endl; 
 			cout << "Age: " << Your_person.getAge() << endl; 
 			cout << "Gender: " << Your_person.getGender() << endl; 
